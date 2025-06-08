@@ -11,6 +11,7 @@ html {
 body{
     font-family: sans-serif;
     display: flex;
+    background-color: black;
 }
 
 .navbar{
@@ -246,4 +247,53 @@ pre{
     .code {
         font-size: 1em;
     }
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar header {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 60px; /* moved down to avoid hamburger overlap */
+  }
+  .navbar.show {
+    transform: translateX(0);
+  }
+
+  #main-doc {
+  margin-left: 60px; /* leave space for hamburger icon */
+  padding-left: 20px;
+}
+
 }
