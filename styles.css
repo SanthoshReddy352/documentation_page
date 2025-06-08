@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+}
+
+.navbar{
+    position: fixed;
+    left:0;
+    top:0;
+    width:250px;
+    padding:15px;
+    border-right:2px solid hsl(0, 3%, 22%);
+    height: 100vh;
+    overflow-y: auto;
+    background-color:black;
+}
+
+.navbar header{
+    font-size: 1.5rem;
+    padding:15px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-list{
+    list-style-type:none;
+}
+
+.nav-item a{
+    font-weight: 600;
+    padding:15px;
+    font-size: large;
+    display: block;
+    color: white;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    text-decoration:underline;
+}
+
+#main-doc{
+    margin-left: 250px;
+    width:100%;
+    padding:15px 0 15px 25px;
+    background-color: black;
+}
+.main-content{
+    width:100%;
+    padding-top:20px;
+}
+
+.main-content header{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.main-content p{
+    font-size: 1.3em;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    color:white
+}
+
+.intro{
+    margin-top: 15px;
+    font-size: 1.3em;
+    margin-left:45px;
+}
+
+.intro li{
+    padding:5px;
+    color: white;
+}
+
+.code{
+    font-size:1.3em;
+    margin:20px;
+    width:65%;
+    height:60px;
+    text-align: left;
+    color:white;
+    padding:15px;
+    background-color: hsla(0, 2%, 32%, 0.705);
+    border: 1px solid hsla(0, 2%, 35%, 0.546);
+    overflow: auto;
+}
+.code1{
+    height: 100px;
+}
+.code2{
+    width:70%;
+    height:100px;
+}
+.code3{
+    height:100px;
+    width:60%;
+    margin-left: 100px;
+}
+pre{
+    font-size: 1.3em;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    color:white;
+    font-family: sans-serif;
+}
+
+.intro1{
+    margin-left:95px;
+}
+.intro2{
+    padding-bottom:15px;
+}
+.intro2 a{ 
+    color:white;
+    letter-spacing: 1.2px;
+}
