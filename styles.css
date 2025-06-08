@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body{
     font-family: sans-serif;
     display: flex;
@@ -23,6 +25,7 @@ body{
     background-color:black;
     animation: slideIn 0.6s ease-out;
 }
+
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
@@ -33,6 +36,7 @@ body{
     opacity: 1;
   }
 }
+
 .navbar header{
     font-size: 1.5rem;
     padding:15px;
@@ -54,10 +58,12 @@ body{
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .nav-item a:hover{
     text-decoration:underline;
     transform: translateX(5px);
 }
+
 .nav-item a::after {
   content: '';
   display: block;
@@ -70,12 +76,14 @@ body{
 .nav-item a:hover::after {
   width: 100%;
 }
+
 #main-doc{
     margin-left: 250px;
     width:100%;
     padding:15px 0 15px 25px;
     background-color: black;
 }
+
 .main-content{
     width:100%;
     padding-top:20px;
@@ -88,6 +96,7 @@ body{
     margin-bottom: 25px;
     animation: fadeIn 1s ease-in;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -98,18 +107,21 @@ body{
     transform: translateY(0);
   }
 }
+
 .main-content p{
     font-size: 1.3em;
     letter-spacing: 1.2px;
     line-height: 1.5;
     color:white
 }
+
 .nav-item a:focus,
 .nav-item a:active {
   background-color: #1a1a1a;
   color: #00ffcc;
   border-left: 4px solid #00ffcc;
 }
+
 .intro{
     margin-top: 15px;
     font-size: 1.3em;
@@ -133,18 +145,22 @@ body{
     border: 1px solid hsla(0, 2%, 35%, 0.546);
     overflow: auto;
 }
+
 .code1{
     height: 100px;
-}
+
+
 .code2{
     width:70%;
     height:100px;
 }
+    
 .code3{
     height:100px;
     width:60%;
     margin-left: 100px;
 }
+    
 pre{
     font-size: 1.3em;
     letter-spacing: 1.2px;
@@ -156,9 +172,11 @@ pre{
 .intro1{
     margin-left:95px;
 }
+
 .intro2{
     padding-bottom:15px;
 }
+    
 .intro2 a{ 
     color:white;
     letter-spacing: 1.2px;
